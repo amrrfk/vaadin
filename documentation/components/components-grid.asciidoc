@@ -918,11 +918,13 @@ while for footer cells, you typically calculate sums or averages.
 HeaderRow groupingHeader = grid.prependHeaderRow();
 HeaderCell namesCell = groupingHeader.join(
     groupingHeader.getCell("firstname"),
-    groupingHeader.getCell("lastname")).setText("Person");
+    groupingHeader.getCell("lastname"));
+    namesCell.setText("Person");
 HeaderCell yearsCell = groupingHeader.join(
     groupingHeader.getCell("born"),
     groupingHeader.getCell("died"),
-    groupingHeader.getCell("lived")).setText("Dates of Life");
+    groupingHeader.getCell("lived"));
+    yearsCell.setText("Dates of Life");
 ----
 
 
